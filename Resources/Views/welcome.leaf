@@ -38,7 +38,7 @@
             Social links
         </div>
         <div class="powered-by">
-            Swift on the server powered by
+            Made by myself using Swift on the server. Powered by
             <a href="https://vapor.codes" target="_blank" style="color: rgb(234,128,252);">Vapor</a>;
             running on
             <a href="https://vapor.cloud" target="_blank" style="color: rgb(128,216,255);">Vapor Cloud</a>.

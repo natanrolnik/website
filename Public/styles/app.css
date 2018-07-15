@@ -17,7 +17,8 @@ div.main {
     min-height: 700px;
 	height: calc(100% - 100px);
 	text-align: center;
-    background: linear-gradient(to bottom right, red, yellow);
+    background: linear-gradient(to bottom right, rgb(23,234,217), rgb(96,120,234));
+/*background: linear-gradient(to bottom right, #6094EA, #F02FC2);*/
     position: relative;
     overflow-y:scroll;
     display: block;
