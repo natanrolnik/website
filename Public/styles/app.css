@@ -30,7 +30,7 @@ div.main {
     position: absolute;
     height: 85%;
     width: 660px;
-    top: 50px;
+    top: 30px;
     left: calc(50% - 330px);
 }
 
