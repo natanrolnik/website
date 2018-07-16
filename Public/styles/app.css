@@ -17,7 +17,8 @@ div.main {
     min-height: 700px;
 	height: calc(100% - 100px);
 	text-align: center;
-    background: linear-gradient(to bottom right, red, yellow);
+    background: linear-gradient(to bottom right, #667eea, #764ba2);
+/*    background: linear-gradient(to bottom right, red, yellow);*/
 /*    background: linear-gradient(to bottom right, rgb(23,234,217), rgb(96,120,234));*/
 /*background: linear-gradient(to bottom right, #6094EA, #F02FC2);*/
     position: relative;
@@ -27,7 +28,6 @@ div.main {
 
 .profile-contents {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0);
     height: 85%;
     width: 660px;
     top: 50px;
@@ -54,18 +54,19 @@ div.main {
 
 .hello {
     margin-top: 16px;
-    color: rgb(60, 60, 60);
+    color: rgb(235, 235, 235);
 /*    color: rgb(240, 240, 240);*/
     font-weight: 600;
     font-size: xx-large;
 }
 
 .hello a {
-    color: rgb(20, 20, 20);
+    color: white;
+    font-weight: 800;
 }
 
 .this-is-me {
-    color: rgb(45, 45, 45);
+    color: rgb(235, 235, 235);
     margin-top: 8px;
     font-weight: 500;
     font-size: large;
@@ -73,7 +74,7 @@ div.main {
 }
 
 .this-is-me a {
-    color: rgb(20, 20, 20);
+    color: white;
     font-weight: bolder;
 }
 
