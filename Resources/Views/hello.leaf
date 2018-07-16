@@ -1,7 +1,66 @@
 #extend("base")
 
-#export("title") { Hello, #(name)! }
+#export("title") { Hi, I'm Natan }
 
 #export("content") {
-	<h1>Hello, #(name)!</h1>
+	<div class="main">
+		<div class="profile-contents">
+            <div class="avatar-border">
+                <div class="avatar-image">
+                    <img src="https://gravatar.com/avatar/c7af4f539e54c0c2b159b8d35c506306?s=400"/>
+                </div>
+            </div>
+            <div class="hello">
+                Hi. I'm Natan.
+            </div>
+            <div class="this-is-me">
+                I'm a programmer, mostly focused on iOS development and Apple platforms, working in
+                <a href="https://kinecosystem.org/about" target="_blank">Kin</a>.
+                Although I learned how to program in Objective-C (and I love it!), Swift is so much fun!
+            </div>
+            <div class="this-is-me">
+                I also have experience with server-side applications (in Node.js), web development (React.js), and acting as a DevOps engineer - technologies I learned in my side projects.
+            </div>
+            <div class="this-is-me">
+                As someone passionate about design and interacting with people, every pixel and every person is important.
+            </div>
+            <div class="this-is-me">
+                I grew up in São Paulo 🇧🇷, where I got my BS in Pharmacy and Biochemistry at Universidade de São Paulo. In the end of my graduation, I decided to do my first iPhone app – it was a huge challenge! Then, I did some other apps, and discovered a new passion in my life.
+            </div>
+            <div class="hello">
+                You can read
+                <a href="https://blog.natanrolnik.me/" target="_blank">
+                     my blog</a>,
+                <br>
+                or find me here:
+            </div>
+        </div>
+	</div>
+    <div class="bottom-bar">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/natanrolnik/" target="_blank">
+                <img src="/images/LinkedInIcon.png" alt="LinkedIn"/>
+            </a>
+            <a href="http://www.github.com/natanrolnik" target="_blank">
+                <img src="/images/GitHubIcon.png" alt="GitHub"/>
+            </a>
+            <a href="http://www.twitter.com/natanrolnik" target="_blank">
+                <img src="/images/TwitterIcon.png" alt="Twitter"/>
+            </a>
+            <a href="mailto:me+ws@natanrolnik.me" target="_blank">
+                <img src="/images/EmailIcon.png" alt="E-mail"/>
+            </a>
+            <a href="http://www.instagram.com/natanrolnik" target="_blank">
+                <img src="/images/InstagramIcon.png" alt="Instagram"/>
+            </a>
+        </div>
+        <div class="powered-by">
+            <a href="https://github.com/natanrolnik/website" target="_blank" style="color: white;">Made by myself</a>
+            using Swift on the server. Powered by
+            <a href="https://vapor.codes" target="_blank" style="color: rgb(234,128,252);">Vapor</a>;
+            running on
+            <a href="https://vapor.cloud" target="_blank" style="color: rgb(128,216,255);">Vapor Cloud</a>.
+        </div>
+    </div>
 }
+

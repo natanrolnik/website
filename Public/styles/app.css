@@ -17,7 +17,8 @@ div.main {
     min-height: 700px;
 	height: calc(100% - 100px);
 	text-align: center;
-    background: linear-gradient(to bottom right, rgb(23,234,217), rgb(96,120,234));
+    background: linear-gradient(to bottom right, red, yellow);
+/*    background: linear-gradient(to bottom right, rgb(23,234,217), rgb(96,120,234));*/
 /*background: linear-gradient(to bottom right, #6094EA, #F02FC2);*/
     position: relative;
     overflow-y:scroll;
@@ -28,9 +29,9 @@ div.main {
     position: absolute;
     background-color: rgba(255, 255, 255, 0);
     height: 85%;
-    width: 600px;
-    top: 15%;
-    left: calc(50% - 300px);
+    width: 660px;
+    top: 50px;
+    left: calc(50% - 330px);
 }
 
 .avatar-image img {
@@ -68,6 +69,7 @@ div.main {
     margin-top: 8px;
     font-weight: 500;
     font-size: large;
+    text-align: justify;
 }
 
 .this-is-me a {
@@ -85,14 +87,26 @@ div.main {
 
 .social-links {
     vertical-align: middle;
-    height: 75%;
+    height: calc(100% - 28px);
+}
+
+.social-links img {
+    margin: 10px 8px;
+    height: 48px;
+    width: 48px;
+    object-fit: contain;
 }
 
 .powered-by {
-    height: 25%;
-    font-size: 12px;
+    color: rgb(240, 240, 240);
+    height: 28px;
+    font-size: 14px;
     background-color: rgb(18, 20, 23);
     vertical-align: middle;
-    line-height: 25px;
+    line-height: 28px;
+}
+
+.powered-by a {
+    font-weight: bolder;
 }
 
