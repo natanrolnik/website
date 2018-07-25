@@ -14,7 +14,6 @@ a {
 }
 
 div.main {
-    min-height: 700px;
 	height: calc(100% - 100px);
 	text-align: center;
     background: linear-gradient(to bottom right, #667eea, #764ba2);
@@ -55,7 +54,6 @@ div.main {
 .hello {
     margin-top: 16px;
     color: rgb(235, 235, 235);
-/*    color: rgb(240, 240, 240);*/
     font-weight: 600;
     font-size: xx-large;
 }
@@ -98,7 +96,8 @@ div.main {
     object-fit: contain;
 }
 
-.powered-by {
+.powered-by, .bottom-text-wrapper {
+    text-align: center;
     color: rgb(240, 240, 240);
     height: 28px;
     font-size: 14px;
@@ -111,3 +110,76 @@ div.main {
     font-weight: bolder;
 }
 
+.bottom-text-wrapper {
+    margin: 0px 2px;
+    display: inline;
+}
+
+@media screen and (min-width: 600px) {
+    div.main {
+        min-height: 700px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .profile-contents {
+        height: 910px;
+        width: 80%;
+        left: 10%;
+    }
+
+    .social-links img {
+        margin-top: 14px;
+        height: 36px;
+        width: 36px;
+    }
+
+    .social-links {
+        height: calc(100% - 50px);
+    }
+
+    .bottom-bar {
+        height: 110px;
+        overflow: hidden;
+    }
+
+    div.main {
+        height: calc(100% - 110px);
+        overflow-y: scroll;
+    }
+
+    .powered-by {
+        height: 50px;
+        font-size: 12px;
+        display: grid;
+    }
+
+    .powered-by, .bottom-text-wrapper {
+        line-height: 21px;
+        height: 21px;
+    }
+
+    .bottom-text-wrapper {
+        margin-top: 1px;
+    }
+
+    .this-is-me {
+        text-align: left;
+        font-weight: 400;
+        margin-top: 12px;
+    }
+
+    .avatar-image img {
+        height: 140px;
+        width: 140px;
+        border: 4px solid rgb(248, 248, 255);
+    }
+
+    .avatar-border {
+        margin: auto;
+        border-radius: 50%;
+        background-color: rgb(150, 150, 150);
+        height: 150px;
+        width: 150px;
+    }
+}
