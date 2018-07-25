@@ -1,6 +1,7 @@
 import Vapor
 
 private let blogRedirects = [
+    "2014/01/17/an-introduction-to-afnetworking-2-and-nsurlsession": "afnetworking-2",
     "2014/03/26/my-intersection/": "my-intersection",
     "2014/04/09/write-the-code-spread-the-love-change-the-world/": "wwdc-14-spread-the-love",
     "2014/05/09/tehilim-in-the-post-pc-era/": "tehilim-post-pc-era",
