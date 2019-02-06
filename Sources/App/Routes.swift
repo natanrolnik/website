@@ -25,6 +25,10 @@ final class Routes: RouteCollection {
             return try self.view.make("hello")
         }
 
+        builder.get("/uptime/check") { _ in
+            return "ok"
+        }
+
         // response to requests to /info domain
         // with a description of the request
         builder.get("info") { req in
