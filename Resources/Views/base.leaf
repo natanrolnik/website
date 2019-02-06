@@ -27,11 +27,11 @@
     <meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="description" content="Hey, I'm Natan. Here you can know a bit about me 😊" />
+    <meta name="description" content="Hey, I'm Natan. Here you can know a bit about me and check my professional and social links 😊" />
     <meta property="og:title" content="Natan Rolnik's website" />
     <meta property="og:url" content="https://natanrolnik.me/" />
-    <meta property="og:description" content="Hey, I'm Natan. Here you can know a bit about me 😊" />
-    <meta property="og:image" content="https://natanrolnik.me/favicon/apple-icon-180x180.png" />
+    <meta property="og:description" content="Hey, I'm Natan. Here you can know a bit about me and check my professional and social links 😊" />
+    <meta property="og:image" content="https://natanrolnik.me/favicon/apple-icon-120x120.png" />
     <meta property="og:type" content="profile" />
 </head>
 <body>
