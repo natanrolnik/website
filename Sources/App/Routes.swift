@@ -13,33 +13,22 @@ private let blogRedirects = [
     "2016/06/05/wwdc-16-past-and-future/": "wwdc16-past-and-future",
 ]
 
-final class Routes: RouteCollection {
-    let view: ViewRenderer
-    init(_ view: ViewRenderer) {
-        self.view = view
+public func routes(_ router: Router) throws {
+    // "It works" page
+    router.get { req in
+        return try req.view().render("hello")
     }
 
-    func build(_ builder: RouteBuilder) throws {
-        /// GET /
-        builder.get { req in
-            return try self.view.make("hello")
-        }
+    router.get("/uptime/check") { _ in
+        return "ok"
+    }
 
-        builder.get("/uptime/check") { _ in
-            return "ok"
-        }
-
-        // response to requests to /info domain
-        // with a description of the request
-        builder.get("info") { req in
-            return req.description
-        }
-
-        blogRedirects.forEach { (key, value) in
-            builder.get(key) { req in
-                return Response(redirect: "https://blog.natanrolnik.me/\(value)",
-                                .permanent)
-            }
+    blogRedirects.forEach {
+        let oldPath = $0.key
+        let newPath = $0.value
+        router.get(oldPath) { req -> Response in
+            let newURLString = "https://blog.natanrolnik.me/\(newPath)"
+            return req.redirect(to: newURLString, type: .permanent)
         }
     }
 }
