@@ -12,7 +12,11 @@ body {
 a {
     text-decoration: none;
     -webkit-touch-callout: default;
-    color:inherit;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 div.main {
@@ -61,7 +65,7 @@ div.main {
 }
 
 .hello a {
-    color: white;
+    color: #54F3F5;
     font-weight: 800;
 }
 
@@ -74,7 +78,7 @@ div.main {
 }
 
 .this-is-me a {
-    color: white;
+    color: #54F3F5;
     font-weight: bolder;
 }
 
