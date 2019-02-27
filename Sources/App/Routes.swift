@@ -23,6 +23,10 @@ public func routes(_ router: Router) throws {
         return "ok"
     }
 
+    router.get("/aws-app-survey") { req in
+        return try req.view().render("aws-survey")
+    }
+
     blogRedirects.forEach {
         let oldPath = $0.key
         let newPath = $0.value
