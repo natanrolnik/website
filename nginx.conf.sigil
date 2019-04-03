@@ -4,6 +4,7 @@
 {{ $listen_port := index $port_map_list 1 }}
 {{ $upstream_port := index $port_map_list 2 }}
 
+{{ if eq $scheme "http" }}
 server {
   listen      [::]:{{ $listen_port }};
   listen      {{ $listen_port }};
@@ -13,7 +14,7 @@ server {
 
   return 301 https://www.natanrolnik.me:443$request_uri;
 }
-
+{{ else if eq $scheme "https"}}
 server {
   listen      [::]:{{ $listen_port }} ssl {{ if eq $.HTTP2_SUPPORTED "true" }}http2{{ else if eq $.SPDY_SUPPORTED "true" }}spdy{{ end }};
   listen      {{ $listen_port }} ssl {{ if eq $.HTTP2_SUPPORTED "true" }}http2{{ else if eq $.SPDY_SUPPORTED "true" }}spdy{{ end }};
@@ -27,7 +28,8 @@ server {
   ssl_prefer_server_ciphers on;
 
   return 301 https://www.natanrolnik.me:443$request_uri;
-}
+  }
+{{ end }}
 
 {{ if eq $scheme "http" }}
 server {
@@ -83,7 +85,7 @@ server {
 server {
   listen      [::]:{{ $listen_port }} ssl {{ if eq $.HTTP2_SUPPORTED "true" }}http2{{ else if eq $.SPDY_SUPPORTED "true" }}spdy{{ end }};
   listen      {{ $listen_port }} ssl {{ if eq $.HTTP2_SUPPORTED "true" }}http2{{ else if eq $.SPDY_SUPPORTED "true" }}spdy{{ end }};
-  server_name website.dokku-dev.natanrolnik.me www.natanrolnik.me natanrolnik.me;
+  server_name website.dokku-dev.natanrolnik.me www.natanrolnik.me;
   access_log  /var/log/nginx/{{ $.APP }}-access.log;
   error_log   /var/log/nginx/{{ $.APP }}-error.log;
 
