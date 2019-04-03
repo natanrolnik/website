@@ -28,3 +28,5 @@ COPY --from=builder /app/Resources ./Resources
 ENV ENVIRONMENT=$env
 
 ENTRYPOINT ./Run serve --env $ENVIRONMENT --hostname 0.0.0.0 --port $PORT
+
+ADD nginx.conf.sigil /app/nginx.conf.sigil
