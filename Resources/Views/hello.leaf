@@ -61,9 +61,7 @@
     </div>
     <div class="bottom-text-wrapper">
     Powered by
-    <a href="https://vapor.codes" target="_blank" style="color: rgb(234,128,252);">Vapor</a>;
-    running on
-    <a href="https://vapor.cloud" target="_blank" style="color: rgb(128,216,255);">Vapor Cloud</a>.
+    <a href="https://vapor.codes" target="_blank" style="color: rgb(234,128,252);">Vapor</a>.
     </div>
     </div>
     </div>
