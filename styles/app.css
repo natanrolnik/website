@@ -20,7 +20,7 @@ a:hover {
 }
 
 div.main {
-	height: calc(100% - 100px);
+	height: calc(100% - 72px);
 	text-align: center;
     background: linear-gradient(to bottom right, #2193b0, #6dd5ed);
 /*    background: linear-gradient(to bottom right, red, yellow);*/
@@ -29,6 +29,10 @@ div.main {
     position: relative;
     overflow-y:scroll;
     display: block;
+}
+
+.bottom-hello {
+    
 }
 
 .profile-contents {
@@ -83,7 +87,7 @@ div.main {
 }
 
 .bottom-bar {
-    height: 100px;
+    height: 72px;
     text-align: center;
     color: white;
     background-color: rgb(36, 41, 46);
@@ -92,7 +96,7 @@ div.main {
 
 .social-links {
     vertical-align: middle;
-    height: calc(100% - 28px);
+    height: 100%;
 }
 
 .social-links img {
@@ -140,30 +144,19 @@ div.main {
         width: 36px;
     }
 
-    .social-links {
-        height: calc(100% - 50px);
-    }
-
     .bottom-bar {
-        height: 100px;
+        height: 60px;
         overflow: hidden;
     }
 
     div.main {
-        height: calc(100% - 100px);
+        height: calc(100% - 60px);
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
     }
 
-    .powered-by {
-        height: 50px;
-        font-size: 12px;
-        display: grid;
-    }
-
-    .powered-by, .bottom-text-wrapper {
-        background-color: rgb(18, 20, 23);
-        line-height: 21px;
+    .bottom-hello {
+        padding-bottom: 20px;   
     }
 
     .bottom-text-wrapper {
