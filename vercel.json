@@ -51,6 +51,11 @@
 			"statusCode": 301
 		},
 		{
+			"source": "/meet",
+			"destination": "https://riverside.com/studio/meetings-CZlL1?t=9d4818e599d366ff77a7",
+			"statusCode": 301
+		},
+		{
 			"source": "/SC24",
 			"destination": "https://poll-hero.natanrolnik.me",
 			"statusCode": 301
