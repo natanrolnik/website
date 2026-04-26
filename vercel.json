@@ -56,6 +56,16 @@
 			"statusCode": 301
 		},
 		{
+			"source": "/poke",
+			"destination": "https://9236e50e3674333fe6449dfdf71c4037.balena-devices.com/billboard/poke",
+			"statusCode": 301
+		},
+		{
+			"source": "/notify",
+			"destination": "https://9236e50e3674333fe6449dfdf71c4037.balena-devices.com/billboard/poke",
+			"statusCode": 301
+		},
+		{
 			"source": "/SC24",
 			"destination": "https://poll-hero.natanrolnik.me",
 			"statusCode": 301
