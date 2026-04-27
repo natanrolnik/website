@@ -1,4 +1,14 @@
 {
+	"rewrites": [
+		{
+			"source": "/poke",
+			"destination": "https://9236e50e3674333fe6449dfdf71c4037.balena-devices.com/billboard/poke"
+		},
+		{
+			"source": "/notify",
+			"destination": "https://9236e50e3674333fe6449dfdf71c4037.balena-devices.com/billboard/poke"
+		}
+	],
 	"redirects": [
 		{
 			"source": "/2014/01/17/an-introduction-to-afnetworking-2-and-nsurlsession",
@@ -53,16 +63,6 @@
 		{
 			"source": "/meet",
 			"destination": "https://riverside.com/studio/meetings-CZlL1?t=9d4818e599d366ff77a7",
-			"statusCode": 301
-		},
-		{
-			"source": "/poke",
-			"destination": "https://9236e50e3674333fe6449dfdf71c4037.balena-devices.com/billboard/poke",
-			"statusCode": 301
-		},
-		{
-			"source": "/notify",
-			"destination": "https://9236e50e3674333fe6449dfdf71c4037.balena-devices.com/billboard/poke",
 			"statusCode": 301
 		},
 		{
