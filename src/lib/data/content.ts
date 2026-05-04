@@ -26,7 +26,7 @@ export const bio = {
 	links: {
 		swiftToolkit: { url: 'https://SwiftToolkit.dev/', label: 'SwiftToolkit.dev' },
 		kodeco: { url: 'https://www.kodeco.com/u/natanrolnik', label: 'Kodeco.com' },
-		blog: { url: 'https://blog.natanrolnik.me/', label: 'my blog' }
+		blog: { url: '/blog', label: 'my blog' }
 	}
 };
 
@@ -38,12 +38,12 @@ export const socialLinks = [
 	},
 	{
 		name: 'GitHub',
-		url: 'https://www.github.com/natanrolnik',
+		url: '/github',
 		icon: 'github'
 	},
 	{
 		name: 'Twitter',
-		url: 'https://www.twitter.com/natanrolnik',
+		url: '/twitter',
 		icon: 'twitter'
 	},
 	{
@@ -58,7 +58,7 @@ export const socialLinks = [
 	},
 	{
 		name: 'YouTube',
-		url: 'https://www.youtube.com/@swifttoolkit',
+		url: '/youtube',
 		icon: 'youtube'
 	}
 ];

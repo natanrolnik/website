@@ -81,6 +81,31 @@
 			"statusCode": 301
 		},
 		{
+			"source": "/github",
+			"destination": "https://www.github.com/natanrolnik",
+			"statusCode": 301
+		},
+		{
+			"source": "/twitter",
+			"destination": "https://www.twitter.com/natanrolnik",
+			"statusCode": 301
+		},
+		{
+			"source": "/x",
+			"destination": "https://www.twitter.com/natanrolnik",
+			"statusCode": 301
+		},
+		{
+			"source": "/youtube",
+			"destination": "https://www.youtube.com/@swifttoolkit",
+			"statusCode": 301
+		},
+		{
+			"source": "/blog",
+			"destination": "https://blog.natanrolnik.me/",
+			"statusCode": 301
+		},
+		{
 			"source": "/SC24",
 			"destination": "https://poll-hero.natanrolnik.me",
 			"statusCode": 301
