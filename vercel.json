@@ -71,6 +71,16 @@
 			"statusCode": 301
 		},
 		{
+			"source": "/linkedin",
+			"destination": "https://www.linkedin.com/in/natanrolnik",
+			"statusCode": 301
+		},
+		{
+			"source": "/instagram",
+			"destination": "https://www.instagram.com/natanrolnik",
+			"statusCode": 301
+		},
+		{
 			"source": "/SC24",
 			"destination": "https://poll-hero.natanrolnik.me",
 			"statusCode": 301

@@ -33,7 +33,7 @@ export const bio = {
 export const socialLinks = [
 	{
 		name: 'LinkedIn',
-		url: 'https://www.linkedin.com/in/natanrolnik/',
+		url: '/linkedin',
 		icon: 'linkedin'
 	},
 	{
@@ -53,7 +53,7 @@ export const socialLinks = [
 	},
 	{
 		name: 'Instagram',
-		url: 'https://www.instagram.com/natanrolnik',
+		url: '/instagram',
 		icon: 'instagram'
 	},
 	{
