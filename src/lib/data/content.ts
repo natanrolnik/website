@@ -6,7 +6,7 @@ export const bio = {
 	paragraphs: [
 		{
 			text: "I'm a programmer, mostly focused on iOS development and Apple platforms, working at ",
-			link: { url: 'https://www.monday.com/', label: 'monday.com' },
+			link: { url: 'https://riverside.fm/', label: 'Riverside.fm' },
 			suffix:
 				'. Although I learned how to program in Objective-C (and I love it!), coding in Swift is much more fun!'
 		},
