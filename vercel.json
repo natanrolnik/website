@@ -7,6 +7,10 @@
 		{
 			"source": "/notify",
 			"destination": "https://9236e50e3674333fe6449dfdf71c4037.balena-devices.com/billboard/poke"
+		},
+		{
+			"source": "/uptime/check",
+			"destination": "/uptime/check.json"
 		}
 	],
 	"redirects": [
