@@ -70,11 +70,6 @@
 			"statusCode": 301
 		},
 		{
-			"source": "/chat",
-			"destination": "https://riverside.com/studio/meetings-CZlL1?t=9d4818e599d366ff77a7",
-			"statusCode": 301
-		},
-		{
 			"source": "/linkedin",
 			"destination": "https://www.linkedin.com/in/natanrolnik",
 			"statusCode": 301
