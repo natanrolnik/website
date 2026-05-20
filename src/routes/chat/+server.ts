@@ -5,7 +5,7 @@ const DESTINATION = 'https://riverside.com/studio/meetings-CZlL1?t=9d4818e599d36
 
 const OG_TITLE = "Natan's Chat Room";
 const OG_DESCRIPTION = "Chat with Natan on Riverside.fm";
-const OG_IMAGE = 'https://natanrolnik.me/pic-large';
+const OG_IMAGE = 'https://gravatar.com/avatar/0eb219c51b518b1e5dd0b2ff97f3bb11fa7af6b766b06cab2903b18a5c992a2e?s=400';
 const OG_URL = 'https://natanrolnik.me/chat';
 
 const CRAWLER_UA = /facebookexternalhit|facebookcatalog|meta-externalagent|twitterbot|slackbot|linkedinbot|whatsapp|telegrambot|discordbot|skypeuripreview|applebot|pinterest|redditbot|embedly|quora|googlebot|bingbot|yandex|baiduspider|duckduckbot|vkshare|w3c_validator|nuzzel|outbrain|tumblr|bitlybot|iframely|mastodon|pleroma|misskey|threads|bluesky/i;
@@ -35,7 +35,9 @@ function ogHtml(): string {
 <meta property="og:title" content="${title}" />
 <meta property="og:description" content="${desc}" />
 <meta property="og:image" content="${image}" />
-<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:card" content="summary" />
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="400" />
 <meta name="twitter:title" content="${title}" />
 <meta name="twitter:description" content="${desc}" />
 <meta name="twitter:image" content="${image}" />
